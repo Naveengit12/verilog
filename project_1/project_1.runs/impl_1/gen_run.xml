@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1753260090">
+  <File Type="PA-TCL" Name="cmos_inverter.tcl"/>
+  <File Type="BITSTR-BMM" Name="cmos_inverter_bd.bmm"/>
+  <File Type="REPORTS-TCL" Name="cmos_inverter_reports.tcl"/>
+  <File Type="OPT-DCP" Name="cmos_inverter_opt.dcp"/>
+  <File Type="OPT-DRC" Name="cmos_inverter_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="cmos_inverter.hwdef"/>
+  <File Type="PWROPT-DCP" Name="cmos_inverter_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="cmos_inverter_placed.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="cmos_inverter_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="cmos_inverter_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="cmos_inverter.bin"/>
+  <File Type="PHYSOPT-DCP" Name="cmos_inverter_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="cmos_inverter.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="cmos_inverter_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="cmos_inverter_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="cmos_inverter_routed_bb.dcp"/>
+  <File Type="BITSTR-MMI" Name="cmos_inverter.mmi"/>
+  <File Type="ROUTE-TIMING-PB" Name="cmos_inverter_timing_summary_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="cmos_inverter_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="cmos_inverter_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="cmos_inverter.bit"/>
+  <File Type="BITSTR-RBT" Name="cmos_inverter.rbt"/>
+  <File Type="BITSTR-NKY" Name="cmos_inverter.nky"/>
+  <File Type="PDI-FILE" Name="cmos_inverter.pdi"/>
+  <File Type="RCFI_FILE" Name="cmos_inverter.rcfi"/>
+  <File Type="CFI_FILE" Name="cmos_inverter.cfi"/>
+  <File Type="RNPI_FILE" Name="cmos_inverter.rnpi"/>
+  <File Type="NPI_FILE" Name="cmos_inverter.npi"/>
+  <File Type="RBD_FILE" Name="cmos_inverter.rbd"/>
+  <File Type="BITSTR-LTX" Name="cmos_inverter.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="cmos_inverter.sysdef"/>
+  <File Type="BG-BGN" Name="cmos_inverter.bgn"/>
+  <File Type="BG-DRC" Name="cmos_inverter.drc"/>
+  <File Type="RDI-RDI" Name="cmos_inverter.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/cmos_inverter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="cmos_inverter"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>
