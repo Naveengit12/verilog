@@ -78,7 +78,7 @@ module FIFO_asynchronous_tb;
     // Monitor signals
     always @(posedge write_clk or posedge read_clk) begin
         $display("%0t\t%b\t%h\t%b\t%b\t%h\t%b", 
-                 $time, write, write_data, write_full, read, read_data, read_empty);
+                  $time, write, write_data, write_full, read, read_data, read_empty);
     end
 
 endmodule
