@@ -14,7 +14,6 @@ endmodule
 module or_nor_gate_tb;   
   reg A, B;
   wire Q;
-
   or_nor_gate dut(.A(A), .B(B), .Q(Q));
 
   initial begin
